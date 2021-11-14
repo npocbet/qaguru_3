@@ -19,18 +19,18 @@ public class Seance {
         }
     }
 
-    public Seance(int duration, int i_number_of_seats, String i_movie_name, int i_ticket_cost) {
-        film = new Film(i_movie_name, duration);
-        numberOfSeats = i_number_of_seats;
-        ticketCost = i_ticket_cost;
+    public Seance(int duration, int iNumberOfSeats, String iMovieName, int iTicketCost) {
+        film = new Film(iMovieName, duration);
+        numberOfSeats = iNumberOfSeats;
+        ticketCost = iTicketCost;
         System.out.printf("Начинается продажа билетов на сеанс %s, количество мест %d, цена билета %d\n",
                 film.filmTitle, numberOfSeats, ticketCost);
     }
 
-    public void sellTicket(int number_of_tickets){
-        if (ticketsSold + number_of_tickets <= numberOfSeats){
-            ticketsSold += number_of_tickets;
-            System.out.printf("Продано %d билетов на сеанс %s \n", number_of_tickets, film.filmTitle);
+    public void sellTicket(int numberOfTickets){
+        if (ticketsSold + numberOfTickets <= numberOfSeats){
+            ticketsSold += numberOfTickets;
+            System.out.printf("Продано %d билетов на сеанс %s \n", numberOfTickets, film.filmTitle);
         }
         else {
             System.out.printf("Недостаточно свободных мест на сеанс %s \n", film.filmTitle);
@@ -66,8 +66,8 @@ public class Seance {
         this.numberOfSeats = numberOfSeats;
     }
 
-    public void setMovie_name(String movie_name) {
-        this.film.filmTitle = movie_name;
+    public void setMovie_name(String movieName) {
+        this.film.filmTitle = movieName;
     }
 
     public void setTicketCost(int ticketCost) {
