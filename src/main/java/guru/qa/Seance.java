@@ -50,7 +50,7 @@ public class Seance {
         return numberOfSeats;
     }
 
-    public String getMovie_name() {
+    public String getMovieName() {
         return film.filmTitle;
     }
 

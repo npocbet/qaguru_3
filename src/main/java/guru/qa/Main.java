@@ -3,23 +3,23 @@ package guru.qa;
 public class Main {
 
     public static void main(String[] args){
-        Seance first_movie = new Seance(120, 30, "Игла", 100);
+        Seance firstMovie = new Seance(120, 30, "Игла", 100);
 
-        first_movie.setTicketsSold(10); // украли 20 билетов))
-        first_movie.sellTicket(5);
-        first_movie.sellTicket(20);
-        System.out.println("напоминаем, фильм называется " + first_movie.getMovie_name());
-        System.out.println(first_movie.film.printFilmsInvitation());
+        firstMovie.setTicketsSold(10); // украли 20 билетов))
+        firstMovie.sellTicket(5);
+        firstMovie.sellTicket(20);
+        System.out.println("напоминаем, фильм называется " + firstMovie.getMovieName());
+        System.out.println(firstMovie.film.printFilmsInvitation());
 
-        first_movie.printInfo();
+        firstMovie.printInfo();
 
-        Seance second_movie = new Seance(150, 20, "Асса", 50);
+        Seance secondMovie = new Seance(150, 20, "Асса", 50);
 
-        second_movie.sellTicket(10);
-        second_movie.sellTicket(15);
-        second_movie.sellTicket(20);
+        secondMovie.sellTicket(10);
+        secondMovie.sellTicket(15);
+        secondMovie.sellTicket(20);
 
-        second_movie.printInfo();
+        secondMovie.printInfo();
 
     }
 }
